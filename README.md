@@ -12,5 +12,6 @@ Install a Syriac Aramaic keyboard on your Mac
 ### Notes
 A new menu item will be added to the left of the date (if one did not exist already) where "Syriac Phonetic" can be selected.
 
-This package uses the Meltho fonts by Beth Mardutho: The Syriac Institute
+This package uses the Meltho fonts by Beth Mardutho: The Syriac Institute.
+
 The Phonetics keyboard resource file was created by Steve Caruso
