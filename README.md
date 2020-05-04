@@ -1,7 +1,7 @@
 # SyriacKeyboard
 Install a Syriac Aramaic keyboard on your Mac
 
-ܟܬܒ݂ ܓܘ ܠܫܢܬ ܐܬܘܪܝܐ ܥܠ ܚܫܘܒ݂ܐ ܕܚܒܘܫܐ
+ ܟܬܒ݂ ܓܘ ܠܫܢܬ ܐܬܘܪܝܐ ܥܠ ܚܫܘܒ݂ܐ ܕܚܒܘܫܐ
 
 ## Installaton Instructions
 1. Download this repository on to your Mac
