@@ -1,7 +1,9 @@
 # SyriacKeyboard
-Install a Syriac Aramaic keyboard on your Mac
+Install the Syriac Aramaic keyboard on your Mac
 
  ܟܬܒ݂ ܓܘ ܠܫܢܬ ܐܬܘܪܝܐ ܥܠ ܚܫܘܒ݂ܐ ܕܚܒܘܫܐ
+
+The script will install the Assyrian keyboard, a variety of fonts in the Estrangela, Madenkhaya and Serto scripts. The script will also enable a menu bar icon that'll allow you to switch between the keyboard and other installed keybaords.
 
 ## Installaton Instructions
 1. Download this repository on to your Mac (https://github.com/SargisYonan/SyriacKeyboard/archive/master.zip)
