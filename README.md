@@ -1,7 +1,7 @@
 # SyriacKeyboard
 Install the Syriac Aramaic keyboard on your Mac
 
- ܟܬܒ݂ ܓܘ ܠܫܢܐ ܕܐܬܘܪܝܐ ܥܠ ܚܫܘܒ݂ܐ ܕܚܒܘܫܐ
+ ܟܬܒ݂ ܓܘ ܠܫܢܐ ܕܐܬܘܪܝܐ ܥܠ ܚܫܘܒ݂ܐ ܕܚܒܘܼܫܐ
 
 The script will install the Assyrian keyboard, and a variety of fonts in the Estrangela, Madenkhaya and Serto scripts. The script will also enable a menu bar icon that'll allow you to switch between the keyboard and other installed keybaords.
 
@@ -9,7 +9,7 @@ The script will install the Assyrian keyboard, and a variety of fonts in the Est
 <img width="350" height="300" src="https://github.com/SargisYonan/SyriacKeyboard/blob/master/syriac_fonts_examples.png">
 </p>
   
-## Installaton Instructions
+## Installation Instructions
 1. Download this repository on to your Mac (https://github.com/SargisYonan/SyriacKeyboard/archive/master.zip)
 2. Unzip master.zip, and open up the folder 
 3. Execute the setup.command script on your Mac (you may have to enable permissions in System Preferences)
@@ -22,4 +22,4 @@ This package uses the Meltho fonts v1.21 by Beth Mardutho: The Syriac Institute 
 
 The Phonetics keyboard resource file was created by Steve Caruso - http://aramaicnt.org/author/stevecaruso/
 
-ܢܢܝܐܠܘܚܘܢ
+ܢܢܐܠܘܼܚܘܢ
