@@ -2,7 +2,7 @@
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.4.2.314 on 2020-10-24 at 17:58 (PDT)-->
 <!--Last edited by Ukelele version 3.4.2.314 on 2020-10-24 at 18:57 (PDT)-->
-<keyboard group="126" id="-17624" name="Syriac (Arabic Phonetic)" maxout="1">
+<keyboard group="126" id="17624" name="Syriac (Arabic Phonetic)" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
