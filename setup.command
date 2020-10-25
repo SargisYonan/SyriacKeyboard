@@ -29,6 +29,11 @@ pushd "$INSTALL_DIR" > /dev/null
 SYRIAC_PHONETIC_RESOURCE_FILE="SyriacPhonetic.rsrc"
 
 ##
+# @var SYRIAC_KEYLAYOUT_FILE
+# @brief The name/path of the Syriac keyboard layout file resembling an Arabic keyboard
+SYRIAC_KEYLAYOUT_FILE="Syriac.keylayout"
+
+##
 # @var KEYBOARD_LAYOUT_DIR
 # @brief The keyboard resource file installation destination.
 # @note Using the home directory's version of Keyboard Layouts (instead of the the root or Network path)
@@ -41,6 +46,9 @@ echo "Loading the Syriac Phonetics keyboard onto the system..."
 mkdir -p "$KEYBOARD_LAYOUT_DIR"
 # Copy the phonetic resource file to the keyboard layout directory
 cp "$SYRIAC_PHONETIC_RESOURCE_FILE" "$KEYBOARD_LAYOUT_DIR"
+
+# Copy the key layout (Phonetic Arabic variant) file to the keyboard layout directory
+cp "$SYRIAC_KEYLAYOUT_FILE" "$KEYBOARD_LAYOUT_DIR"
 
 # Add the Syriac Phonetics keyboard to the list of system keyboard inputs
 defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
