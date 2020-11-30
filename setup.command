@@ -16,34 +16,17 @@
 #       4. plist changes disallowing property writes to com.apple.HIToolbox
 ##
 
-while [[ $# -gt 0 ]]
-do
-	key="$1"
-
-INSTALL_ARABIC_PHONETIC_TYPE=0
-
-case $key in
-    -a|--arabic|--ap)
-    INSTALL_ARABIC_PHONETIC_TYPE=1
-    shift # past argument
-    ;;
-    -h|--help)
-    help
-    shift # past argument
-    ;;
-    *)    # unknown option
-    shift # past argument
-    ;;
-esac
-done
-
 # Get the directory in which the installation script lives.
 INSTALL_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # Push into the script directory to get relative paths to work.
 pushd "$INSTALL_DIR" > /dev/null
 
+## Copy the Syriac keyboard format to the system keyboard directory ##
+
+##
+# @var SYRIAC_PHONETIC_RESOURCE_FILE
+# @brief The name/path of the keyboard resource file
 SYRIAC_PHONETIC_RESOURCE_FILE="SyriacPhonetic.rsrc"
-SYRIAC_ARABIC_PHONETIC_KEYLAYOUT_FILE="SyriacArabicPhonetic.keylayout"
 
 ##
 # @var KEYBOARD_LAYOUT_DIR
@@ -53,30 +36,16 @@ SYRIAC_ARABIC_PHONETIC_KEYLAYOUT_FILE="SyriacArabicPhonetic.keylayout"
 #       of the script.
 KEYBOARD_LAYOUT_DIR="/Users/$USER/Library/Keyboard Layouts/"
 
+echo "Loading the Syriac Phonetics keyboard onto the system..."
 # Create the keyboard layout directory if it does not exist.
-mkdir -p "$KEYBOARD_LAYOUT_DIR"	
+mkdir -p "$KEYBOARD_LAYOUT_DIR"
+# Copy the phonetic resource file to the keyboard layout directory
+cp "$SYRIAC_PHONETIC_RESOURCE_FILE" "$KEYBOARD_LAYOUT_DIR"
 
-if [[ $INSTALL_ARABIC_PHONETIC_TYPE == 1 ]]; then
-	echo "Loading the Syriac Arabic Phonetic keyboard onto the system..."
-
-	# Copy the keyboard layout file to the keyboard layout directory
-	cp "$SYRIAC_ARABIC_PHONETIC_KEYLAYOUT_FILE" "$KEYBOARD_LAYOUT_DIR"
-
-	# Add the Syriac Phonetics keyboard to the list of system keyboard inputs
-	defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac (Arabic Phonetic)</string></dict>'
-	defaults write com.apple.HIToolbox AppleInputSourceHistory -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac (Arabic Phonetic)</string></dict>'
-	defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac (Arabic Phonetic)</string></dict>'
-else
-	echo "Loading the Syriac Phonetics keyboard onto the system..."
-
-	# Copy the phonetic resource file to the keyboard layout directory
-	cp "$SYRIAC_PHONETIC_RESOURCE_FILE" "$KEYBOARD_LAYOUT_DIR"
-
-	# Add the Syriac Phonetics keyboard to the list of system keyboard inputs
-	defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
-	defaults write com.apple.HIToolbox AppleInputSourceHistory -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
-	defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
-fi
+# Add the Syriac Phonetics keyboard to the list of system keyboard inputs
+defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
+defaults write com.apple.HIToolbox AppleInputSourceHistory -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>0x0001045a</integer><key>KeyboardLayout Name</key><string>Syriac Phonetic</string></dict>'
 
 ## Install Fonts ##
 
