@@ -1,6 +1,7 @@
 # NOTE 
 A Syriac keyboard is built-in to macOS as of version 12.0 (Monterey) by default
-System Preference > Keyboard > Input Sources > '+' > Assyrian > select Syriac (Arabic) or Syriac (QWERTY)
+
+Apple Logo > System Preferences > Keyboard > Input Sources > '+' > Assyrian > select Syriac (Arabic) or Syriac (QWERTY)
 
 ## SyriacKeyboard
 Install the Syriac Aramaic keyboard on your Mac
