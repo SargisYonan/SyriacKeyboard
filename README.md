@@ -1,5 +1,5 @@
 # NOTE 
-This keyboard is built-in to macOS 12 (Monterey)
+A Syriac keyboard is built-in to macOS as of version 12.0 (Monterey) by default
 System Preference > Keyboard > Input Sources > '+' > Assyrian > select Syriac (Arabic) or Syriac (QWERTY)
 
 ## SyriacKeyboard
