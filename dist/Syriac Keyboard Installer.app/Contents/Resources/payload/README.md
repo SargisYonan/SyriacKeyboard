@@ -13,17 +13,17 @@ For non-technical users, use the packaged macOS app:
 1. Download [`Syriac-Keyboard-Installer-macOS.zip`](https://github.com/SargisYonan/SyriacKeyboard/releases/latest/download/Syriac-Keyboard-Installer-macOS.zip) from the latest release.
 2. Unzip it.
 3. Open `Syriac Keyboard Installer.app`.
-4. If macOS warns that the app is from an unidentified developer, go to System Settings > Privacy & Security and click Open Anyway.
+4. If macOS warns that the app is from an unidentified developer, right-click the app, choose `Open`, then confirm.
 5. Choose either `Syriac QWERTY` or `Syriac Arabic`.
 6. Reboot when the installer finishes.
 
 ## Script Install
 If you prefer the scripts directly:
 
-1. Clone this repository or [Download the source code](https://github.com/SargisYonan/SyriacKeyboard/archive/refs/tags/SyriacKeyboard-2.0.zip) on to your Mac.
+1. Download this repository on to your Mac.
 2. Open the folder.
-3. Double-click on `setup.command` for the QWERTY layout (or `setup_arabic_phonetic.command` for the Arabic layout), or run `./setup.command` in your Terminal.
-4. If macOS warns that the app is from an unidentified developer, go to System Settings > Privacy & Security and click Open Anyway.
+3. Run `setup.command` for the built-in Syriac QWERTY layout.
+4. Run `setup_arabic_phonetic.command` for the built-in Syriac Arabic layout.
 5. Reboot when prompted.
 
 ## Included Fonts
