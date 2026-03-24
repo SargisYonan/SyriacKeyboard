@@ -10,7 +10,7 @@ macOS 12.0 (Monterey) and newer already include Assyrian keyboard layouts. This 
 ## Easy Install
 For non-technical users, use the packaged macOS app:
 
-1. Download [`Syriac-Keyboard-Installer-macOS.zip`](https://github.com/SargisYonan/SyriacKeyboard/releases/latest/download/Syriac-Keyboard-Installer-macOS.zip) from the latest release.
+1. Download `Syriac-Keyboard-Installer-macOS.zip` from the latest release.
 2. Unzip it.
 3. Open `Syriac Keyboard Installer.app`.
 4. If macOS warns that the app is from an unidentified developer, right-click the app, choose `Open`, then confirm.
@@ -26,37 +26,6 @@ If you prefer the scripts directly:
 4. Run `setup_arabic_phonetic.command` for the built-in Syriac Arabic layout.
 5. Reboot when prompted.
 
-## Included Fonts
-The installer currently copies these fonts into your user font library:
-
-- `NohadraSyriac-Amedia.otf`
-- `NohadraSyriac-Sapna.otf`
-- `NotoSansSyriac-Regular.ttf`
-- `NotoSansSyriacEastern-Black.otf`
-- `Ramsina-Regular.ttf`
-- `Adiabene.otf`
-- `Antioch.otf`
-- `Batnan.otf`
-- `BatnanBold.otf`
-- `Ctesiphon.otf`
-- `Edessa.otf`
-- `Jerusalem.otf`
-- `JerusalemBold.otf`
-- `JerusalemItalic.otf`
-- `JerusalemOutline.otf`
-- `Kharput.otf`
-- `Malankara.otf`
-- `Mardin.otf`
-- `MardinBold.otf`
-- `Midyat.otf`
-- `Nisibin.otf`
-- `NisibinOutline.otf`
-- `QenNeshrin.otf`
-- `Talada.otf`
-- `TurAbdin.otf`
-- `Urhoy.otf`
-- `UrhoyBold.otf`
-
 ### Notes
 On modern macOS versions, the keyboards appear in the input menu as `Syriac – QWERTY` and `Syriac – Arabic`.
 
@@ -69,3 +38,7 @@ The packaged installer app can be rebuilt locally with:
 ```sh
 ./build_installer_app.command
 ```
+
+This package includes Meltho fonts v1.21 by Beth Mardutho: The Syriac Institute - http://bethmardutho.org/meltho/
+
+The Phonetics keyboard resource file was created by Steve Caruso - http://aramaicnt.org/author/stevecaruso/
